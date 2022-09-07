@@ -7,7 +7,7 @@ html {
     font-style: normal;
 }
 .container {
-    width: 960px;
+    width: 96%;
     margin: 0 auto;
 }
 nav {
@@ -24,8 +24,7 @@ nav {
     justify-content: space-between;
 }
 .ul1 {
-    display: inline-flex;   
-    align-items: center;
+    display: none;
 }
 .firm {
     display: flex;
@@ -58,7 +57,6 @@ header {
     align-items: flex-start;
 }
 .introduction {
-    width: 577px;
     height: 46.11px;
     font-size: 36px;
 }
@@ -80,17 +78,16 @@ header {
 }
 .oft:hover {
     background-color: white;
-    color: black;
-    
+    color: black;    
 }
 .section1 {
     background-color: #F1F1F1;
     width: 100%;
-    padding: 50px 0px;
-   
+    padding: 50px 0px;   
 }
 .specialists {
-    width: 386px;
+    display: flex;
+    justify-content: center;
     height: 35px;
     font-weight: 700;
     font-size: 36px;
@@ -103,57 +100,45 @@ header {
 }
 .employee {
     display: flex;
-}
-.employee:nth-last-of-type(odd) {
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
 }
 .ellipse {
     width: 197px;
     height: 197px;
     border-radius: 50%;
-    background: #C4C4C4;
     background-image: url(pies1.jpg);
     background-size: cover;
 }
 .ellipse1 {
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-    background: #917D7D;
-    background-image: url(pies2.png);
-    background-size: cover;
+    background-image: url(pies2.png);    
 }
 .text {
-    width: 700px;
     font-weight: 700;
     font-size: 18px;
-    padding: 30px 0 0 50px;
+    text-align: justify;
+    margin-bottom: 20px;
 }
-.text-align-right {
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
 .section2 {
     background-color: #405D78;
     width: 100%;
     padding: 50px 0;
+    display: flex;
+    align-content: center;
 }
 .servises {
-    width: 501px;
-    height: 42px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
     color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
 }
 .servises1 {
-    width: 960px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;  
-    gap: 60px;  
-    margin-top: 30px;     
+    gap: 60px;       
 }
 .box {
     width: 198px;
@@ -189,26 +174,24 @@ header {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: #E07A64;
-   
+    background: #E07A64;   
 }
 footer {
     width: 100%;
-    height: 71px;
+    height: 147px;
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
     color: #FFFFFF;  
 }
 .container1 {
-    width: 960px;
-    height: 71px;
+    width: 96%;
     margin: 0 auto;
 }
 .footer-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -219,5 +202,86 @@ footer {
 }
 i {
     color: #FFFFFF;
-    margin: 18px;
+    zoom: 170%;
+    padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+    .employee {
+        flex-direction: row;
+        align-items: none;
+    }
+    .employee:nth-last-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+    .servises1 {
+        width: 960px;
+    }
+    .ul1 {
+        display: flex;   
+        align-items: center;
+    }
+    .introduction {
+        width: 577px;
+    }
+    .text {
+        width: 700px;
+        padding: 30px 0 0 50px;
+    }
+    .text-align-right {
+        text-align: right;
+        padding: 30px 50px 0 0;
+    }
+    .servises {
+        width: 501px;
+        margin-bottom: 30px;
+        font-size: 36px;
+        justify-content: left;
+    } 
+    .container1 {
+        width: 960px;
+    } 
+    .specialists {
+        justify-content: left;
+    }
+    footer {
+        height: 71px;
+    } 
+    .footer-container {
+        flex-direction: row;
+    }
+    i {
+        zoom: normal;
+        margin: 18px;
+    }                  
+}
+@media screen and (min-width: 768px) {
+    .ul1 {
+        display: flex;
+    }
+    .employee {
+        flex-direction: row;
+        align-items: none;
+    }
+    .employee:nth-last-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+    .text {
+        width: 500px;
+        padding: 30px 0 0 40px;
+    }
+    .text-align-right {
+        padding: 30px 40px 0 0;
+    }
+    .specialists {
+        padding-bottom: 20px;
+    }
+    .introduction {
+        width: 500px;
+    }
+    footer {
+        height: 100px;
+    } 
 }
