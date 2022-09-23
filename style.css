@@ -47,9 +47,6 @@ header {
     height: calc(100vh - 50px);
     background-size: cover;
     color: #FFFFFF;
-}
-.header-container {
-    height: 100vh;
     font-weight: 700;
     display: flex;  
     flex-direction: column;
@@ -75,10 +72,6 @@ header {
     text-decoration: none;
     transition-duration: 1s;
     transition-property: all;
-}
-.oft:hover {
-    background-color: white;
-    color: black;    
 }
 .section1 {
     background-color: #F1F1F1;
@@ -150,9 +143,6 @@ header {
     transition-duration: .5s;
     transition-property: all;
 }
-.box:hover {
-    transform: scale(1.05);  
-}
 .box:nth-of-type(1) {
     position: relative;
 }
@@ -185,10 +175,6 @@ footer {
     font-weight: 700;
     color: #FFFFFF;  
 }
-.container1 {
-    width: 96%;
-    margin: 0 auto;
-}
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -205,9 +191,41 @@ i {
     zoom: 170%;
     padding: 10px;
 }
+@media screen and (min-width: 768px) {
+    .ul1 {
+        display: flex;
+    }
+    .employee {
+        flex-direction: row;
+        align-items: none;
+    }
+    .employee:nth-last-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+    .text {
+        width: 500px;
+        padding: 30px 0 0 40px;
+    }
+    .text-align-right {
+        padding: 30px 40px 0 0;
+    }
+    .specialists {
+        padding-bottom: 20px;
+    }
+    .introduction {
+        width: 500px;
+    }
+    footer {
+        height: 100px;
+    } 
+}
 @media screen and (min-width: 1024px) {
     .container {
         width: 960px;
+    }
+    .oft:hover {
+        background-color: white;
+        color: black;    
     }
     .employee {
         flex-direction: row;
@@ -246,6 +264,9 @@ i {
     .specialists {
         justify-content: left;
     }
+    .box:hover {
+        transform: scale(1.05);  
+    }
     footer {
         height: 71px;
     } 
@@ -256,32 +277,4 @@ i {
         zoom: normal;
         margin: 18px;
     }                  
-}
-@media screen and (min-width: 768px) {
-    .ul1 {
-        display: flex;
-    }
-    .employee {
-        flex-direction: row;
-        align-items: none;
-    }
-    .employee:nth-last-of-type(odd) {
-        flex-direction: row-reverse;
-    }
-    .text {
-        width: 500px;
-        padding: 30px 0 0 40px;
-    }
-    .text-align-right {
-        padding: 30px 40px 0 0;
-    }
-    .specialists {
-        padding-bottom: 20px;
-    }
-    .introduction {
-        width: 500px;
-    }
-    footer {
-        height: 100px;
-    } 
 }
