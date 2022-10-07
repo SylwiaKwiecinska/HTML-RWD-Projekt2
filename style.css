@@ -11,6 +11,7 @@ html {
     margin: 0 auto;
 }
 nav {
+    background-color: #4E4E4E;
     width: 100%;
     height: 50px;
     display: flex;
@@ -23,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.ul1 {
+.nav_list {
     display: none;
 }
 .firm {
@@ -57,7 +58,7 @@ header {
     height: 46.11px;
     font-size: 36px;
 }
-.introduction1 {
+.introduction_continued {
     width: 276px;
     padding: 75px 0px;
     height: 23.13px;  
@@ -73,7 +74,7 @@ header {
     transition-duration: 1s;
     transition-property: all;
 }
-.section1 {
+.section_specialists {
     background-color: #F1F1F1;
     width: 100%;
     padding: 50px 0px;   
@@ -87,7 +88,7 @@ header {
     color: #152D41;
     padding-bottom: 78px;
 }
-.ul2 {
+.section_list {
     align-items: center;
     color: #000000;
 }
@@ -103,7 +104,7 @@ header {
     background-image: url(pies1.jpg);
     background-size: cover;
 }
-.ellipse1 {
+.ellipse_bottom {
     background-image: url(pies2.png);    
 }
 .text {
@@ -112,7 +113,7 @@ header {
     text-align: justify;
     margin-bottom: 20px;
 }
-.section2 {
+.section_servises {
     background-color: #405D78;
     width: 100%;
     padding: 50px 0;
@@ -126,7 +127,7 @@ header {
     margin-bottom: 30px;
     text-align: center;
 }
-.servises1 {
+.servises_list {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -140,15 +141,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
     transition-duration: .5s;
     transition-property: all;
 }
 .box:nth-of-type(1) {
     position: relative;
 }
+.service_new {
+    font-weight: 400;
+}
 .service {
-    width: 149px;
-    height: 67px;
     font-weight: 400;
     font-size: 24px;
     display: flex;
@@ -156,7 +160,7 @@ header {
     justify-content: center;
     color: #000000;
 }
-.ellipse3{
+.ellipse_servises{
     position: absolute;
     display: flex;
     top: -11px;
@@ -167,6 +171,7 @@ header {
     background: #E07A64;   
 }
 footer {
+    background-color: #4E4E4E;
     width: 100%;
     height: 147px;
     display: flex;
@@ -181,7 +186,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-.ul3 {
+.footer_list {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -189,25 +194,22 @@ footer {
 i {
     color: #FFFFFF;
     zoom: 170%;
-    padding: 10px;
+    padding: 5px;
 }
 @media screen and (min-width: 768px) {
-    .ul1 {
+    .nav_list {
         display: flex;
     }
     .employee {
         flex-direction: row;
         align-items: none;
     }
-    .employee:nth-last-of-type(odd) {
-        flex-direction: row-reverse;
-    }
     .text {
-        width: 500px;
+        width: 65%;
         padding: 30px 0 0 40px;
     }
     .text-align-right {
-        padding: 30px 40px 0 0;
+        padding: 30px  0 0 40px;
     }
     .specialists {
         padding-bottom: 20px;
@@ -218,6 +220,10 @@ i {
     footer {
         height: 100px;
     } 
+    i {
+        color: #FFFFFF;
+        zoom: 200%;   
+    }
 }
 @media screen and (min-width: 1024px) {
     .container {
@@ -234,10 +240,10 @@ i {
     .employee:nth-last-of-type(odd) {
         flex-direction: row-reverse;
     }
-    .servises1 {
+    .servises_list {
         width: 960px;
     }
-    .ul1 {
+    .nav_list  {
         display: flex;   
         align-items: center;
     }
@@ -258,9 +264,6 @@ i {
         font-size: 36px;
         justify-content: left;
     } 
-    .container1 {
-        width: 960px;
-    } 
     .specialists {
         justify-content: left;
     }
@@ -274,7 +277,7 @@ i {
         flex-direction: row;
     }
     i {
-        zoom: normal;
-        margin: 18px;
-    }                  
+        color: #FFFFFF;
+        zoom: 200%;   
+    }              
 }
