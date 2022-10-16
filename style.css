@@ -1,6 +1,3 @@
-/* font-family 'Roboto', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wgh@300;700&display=swap');
-
 html {
     scroll-behavior: smooth;
     font-family: 'Roboto';
@@ -34,9 +31,7 @@ nav {
 }
 .spn {
     font-weight: 400;
-    font-size: 18px;
     margin: 20px; 
-    font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -221,7 +216,6 @@ i {
         height: 100px;
     } 
     i {
-        color: #FFFFFF;
         zoom: 200%;   
     }
 }
@@ -277,7 +271,6 @@ i {
         flex-direction: row;
     }
     i {
-        color: #FFFFFF;
         zoom: 200%;   
     }              
 }
