@@ -40,6 +40,7 @@ nav {
 }
 header {
     width: 100%;
+    background-image: url('https://i.iplsc.com/-/000DXXFPTDEXHLK1-C411.jpg');
     height: calc(100vh - 50px);
     background-size: cover;
     color: #FFFFFF;
@@ -195,17 +196,7 @@ i {
     .nav_list {
         display: flex;
     }
-    .employee {
-        flex-direction: row;
-        align-items: none;
-    }
-    .text {
-        width: 65%;
-        padding: 30px 0 0 40px;
-    }
-    .text-align-right {
-        padding: 30px  0 0 40px;
-    }
+    
     .specialists {
         padding-bottom: 20px;
     }
